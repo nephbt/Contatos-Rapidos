@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25sp"
+    android:orientation="vertical"
+    tools:context=".ContatoActivity">
+
+    <ImageView
+        android:id="@+id/voltarImgButton"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="110sp"
+        app:srcCompat="@drawable/baseline_person_24" />
+
+    <TextView
+        android:id="@+id/nomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do contato"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/telefoneImgButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/phone_call_455705" />
+
+        <ImageView
+            android:id="@+id/linkedinImgButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            app:layout_constraintStart_toEndOf="@id/telefoneImgButton"
+            app:layout_constraintTop_toTopOf="@id/telefoneImgButton"
+            app:srcCompat="@drawable/_citypng_com_hd_linkedin_square_black_icon_transparent_background___600x600" />
+
+        <ImageView
+            android:id="@+id/emailImgButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toEndOf="@id/linkedinImgButton"
+            app:layout_constraintTop_toTopOf="@id/telefoneImgButton"
+            app:srcCompat="@drawable/gmail_logo_black_512px" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="Telefone"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/telefoneImgButton" />
+
+        <TextView
+            android:id="@+id/numeroTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(62) 912345678"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"/>
+
+        <ImageView
+            android:id="@+id/starIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:srcCompat="@drawable/star_off" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
